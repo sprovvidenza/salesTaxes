@@ -12,31 +12,40 @@ public class SimpleParserProviderImpl implements ParseProvider<Product> {
 
 	@Override
 	public Product parse(String input) {
-
 		ProductBuilder builder = new ProductBuilder();
-		String token = input;
 
-		String[] split = token.split(SPLIT_TOKEN);
+		String[] productElement = input.split(SPLIT_TOKEN);
+		String product = extractProductTitle(productElement);
 
-
-		String nonPrice = split[0];
-		int quantityPosition = nonPrice.indexOf(EMPTY);
-
-		String quantity = nonPrice.substring(0, quantityPosition);
-		builder.quantity(Integer.parseInt(quantity));
-
-		String product = nonPrice.substring(quantityPosition);
-
-		if (product.contains(IMPORTED))
-			builder.imported(true);
-
+		builder.quantity(extractQuantity(productElement));
+		builder.imported(extractImported(product));
 		builder.title(product.trim());
-
-		String price = split[1];
-		builder.price(Float.parseFloat(price));
-
+		builder.price(extractPrice(productElement));
 
 		return builder.build();
+	}
+
+
+	private int extractQuantity(String[] productElement){
+		int quantityPosition = productElement[0].indexOf(EMPTY);
+		String quantity = productElement[0].substring(0, quantityPosition);
+
+		return Integer.parseInt(quantity);
+	}
+
+	private String extractProductTitle(String[] productElement){
+
+		int quantityPosition = productElement[0].indexOf(EMPTY);
+		return  productElement[0].substring(quantityPosition);
+	}
+
+	private Float extractPrice(String[] productElement){
+		return Float.parseFloat(productElement[1]);
+	}
+
+	private boolean extractImported(String product){
+		if (product.contains(IMPORTED)) return true;
+		return false;
 	}
 
 

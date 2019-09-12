@@ -10,6 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import static lastminute.com.parser.configurations.ItemConfigurations.SKIP_IN;
+
 
 public class FileProviderImpl implements InputProvider {
 
@@ -24,7 +26,7 @@ public class FileProviderImpl implements InputProvider {
 			while (scanner.hasNextLine()) {
 				String line = scanner.nextLine();
 
-				if (line.startsWith("Input")) continue;
+				if (line.startsWith(SKIP_IN)) continue;
 
 				if (line.isEmpty()) {
 					readAllLines.add(stringBuffer.toString());

@@ -7,7 +7,7 @@ public class ItemConfigurations {
 
 	public static String DELIMITER = ";";
 
-	public static String SKIPIN = "Input";
+	public static String SKIP_IN = "Input";
 
 	public static String SPLIT_TOKEN = " at ";
 
