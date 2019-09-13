@@ -8,7 +8,12 @@ import lastminute.com.service.CartService;
 import lastminute.com.taxes.SimpleHandlerTaxes;
 
 import java.util.List;
-
+/*
+*
+* Service that use @lastminute.com.provider.TaxesProvider to return the order (@lastminute.com.model.Cart)
+* with total and salesTaxes populated correctly
+*
+* */
 public class CartServiceImpl implements CartService<Cart, Product> {
 
 	private final TaxesProvider<SimpleHandlerTaxes> taxesProvider;

@@ -15,4 +15,4 @@ compile, build the project and run the tests case
 
 run application from jar package
 
-**`java -jar target/salex-taxes-1.0.0-SNAPSHOT.jar [input_file]`**
+**`java -jar target/salex-taxes-1.0.0-SNAPSHOT.jar [path_file]`**

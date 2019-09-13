@@ -12,7 +12,11 @@ import java.util.Scanner;
 
 import static lastminute.com.parser.configurations.ItemConfigurations.SKIP_IN;
 
-
+/*
+*
+* Provider that read an file in input and parse it such as single string that represent a single product
+*
+* */
 public class FileProviderImpl implements InputProvider {
 
 	private static Logger log = LoggerFactory.getLogger(FileProviderImpl.class);

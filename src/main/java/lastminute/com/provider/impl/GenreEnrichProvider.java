@@ -5,6 +5,11 @@ import lastminute.com.model.Product;
 import lastminute.com.provider.DictionaryProvider;
 import lastminute.com.provider.EnrichProvider;
 
+/*
+*
+* Provider to enrich the order with the correct genre
+*
+* */
 public class GenreEnrichProvider implements EnrichProvider<Product> {
 
 	private DictionaryProvider provider;

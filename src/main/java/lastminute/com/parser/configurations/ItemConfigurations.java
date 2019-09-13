@@ -1,10 +1,15 @@
 package lastminute.com.parser.configurations;
 
-import java.util.HashMap;
-
+/*
+*
+*
+* Generic global configurations for the Application
+*
+* */
 public class ItemConfigurations {
 
 
+	//parsing input configurations
 	public static String DELIMITER = ";";
 
 	public static String SKIP_IN = "Input";
@@ -26,6 +31,7 @@ public class ItemConfigurations {
 	public static String OUTPUT_PATTERN = "Output %s: \n";
 
 
+	//Taxes percent
 	public static Integer IMPORTED_PERCENT = 5;
 	public static Integer GENERIC_PERCENT = 10;
 

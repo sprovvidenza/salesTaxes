@@ -7,6 +7,11 @@ import lastminute.com.taxes.SimpleHandlerTaxes;
 import static lastminute.com.parser.configurations.ItemConfigurations.GENERIC_PERCENT;
 import static lastminute.com.parser.configurations.ItemConfigurations.IMPORTED_PERCENT;
 
+/*
+*
+* Provider that calculate the correct taxes to apply to the product
+*
+* */
 public class SimpleTaxesProvider implements TaxesProvider<SimpleHandlerTaxes> {
 
 	@Override

@@ -6,6 +6,12 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
+
+/*
+*
+* Simple dictionary about to simulate how to understand if an word si a Food,Book or Medical
+*
+* */
 public class InMemoryDictionary implements Dictionary {
 
 	private HashMap<String, Genre> dictionary;

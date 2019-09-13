@@ -21,6 +21,15 @@ import static lastminute.com.parser.configurations.ItemConfigurations.PRODUCT_PA
 import static lastminute.com.parser.configurations.ItemConfigurations.SALES_TAXES_PATTERN;
 import static lastminute.com.parser.configurations.ItemConfigurations.TOTAL_PATTERN;
 
+
+/*
+*
+*
+* Application Context to manage the principal services and providers.
+* This class it was written following the Singleton design pattern
+*
+*
+* */
 public class ApplicationContext implements Context {
 
 	private static Logger log = LoggerFactory.getLogger(ApplicationContext.class);

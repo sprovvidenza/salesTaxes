@@ -7,6 +7,11 @@ import lastminute.com.provider.ParseProvider;
 
 import static lastminute.com.parser.configurations.ItemConfigurations.*;
 
+/*
+*
+* Provider that parse from a simple string the Product such as java object
+*
+* */
 public class SimpleParserProviderImpl implements ParseProvider<Product> {
 
 

@@ -8,6 +8,12 @@ import lastminute.com.service.ProductService;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+*
+* Service that use @lastminute.com.provider.ParseProvider and @lastminute.com.provider.EnrichProvider
+* to return the products of a single order (@lastminute.com.model.Cart)
+*
+* */
 public class ProductServiceImpl implements ProductService<Product> {
 
 

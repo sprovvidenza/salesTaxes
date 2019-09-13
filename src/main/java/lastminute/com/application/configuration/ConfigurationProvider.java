@@ -13,7 +13,11 @@ import lastminute.com.provider.impl.SimpleDictionaryProviderImpl;
 import lastminute.com.provider.impl.SimpleParserProviderImpl;
 import lastminute.com.provider.impl.SimpleTaxesProvider;
 import lastminute.com.taxes.SimpleHandlerTaxes;
-
+/*
+*
+* The istances of all providers used by application
+*
+* */
 public class ConfigurationProvider {
 
 

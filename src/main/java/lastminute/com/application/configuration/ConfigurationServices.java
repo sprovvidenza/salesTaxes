@@ -11,6 +11,12 @@ import static lastminute.com.application.configuration.ConfigurationProvider.enr
 import static lastminute.com.application.configuration.ConfigurationProvider.parseProvider;
 import static lastminute.com.application.configuration.ConfigurationProvider.taxesProvider;
 
+
+/*
+ *
+ * The istances of all services used by application
+ *
+ * */
 public class ConfigurationServices {
 
 	public static CartService<Cart, Product> cartService(){

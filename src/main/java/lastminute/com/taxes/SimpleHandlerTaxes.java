@@ -2,6 +2,11 @@ package lastminute.com.taxes;
 
 import lastminute.com.model.Genre;
 
+/*
+*
+* Simple handler used as input for the provider that calculate the correct taxes to apply
+*
+* */
 public class SimpleHandlerTaxes implements Taxes{
 	private Boolean imported;
 	private Genre genre;

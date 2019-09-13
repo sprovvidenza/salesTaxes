@@ -6,6 +6,11 @@ import lastminute.com.provider.DictionaryProvider;
 
 import java.util.StringTokenizer;
 
+/*
+*
+* Provider that return from an dictionary the correct genre or if it is not recognized return a default generic genre
+*
+* */
 public class SimpleDictionaryProviderImpl implements DictionaryProvider {
 
 	private Dictionary dictionary;
